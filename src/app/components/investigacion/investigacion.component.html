@@ -1,0 +1,19 @@
+<div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top: 100px; padding-bottom: 100px">
+  <div class="col" *ngFor="let tema of temas">
+    <div class="card">
+      <img src="{{tema.rutaImg}}" class="card-img-top" alt="{{tema.altImg}}" />
+      <div class="card-body">
+        <h5 class="card-title">{{tema.nombre}}</h5>
+        <p class="card-text">{{tema.introduccion}}</p>
+        <div class="d-grid gap-2">
+          <a
+            class="btn btn-primary"
+            target="black"
+            href="{{tema.linkDeBusqueda}}"
+            >Ver Más...</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

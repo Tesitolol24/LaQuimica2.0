@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Investigacion, InvestigacionService } from '../../services/investigacion.service';
 
 @Component({
   selector: 'app-investigacion',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvestigacionComponent implements OnInit {
 
-  constructor() { }
+  temas:Investigacion[] = []
+
+  constructor(private _temasService:InvestigacionService) { }
 
   ngOnInit(): void {
+    this.temas = this._temasService.getTemas();
   }
 
 }
