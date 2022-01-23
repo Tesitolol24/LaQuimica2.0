@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { APP_ROUTING } from './app.routes';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { InvestigacionComponent } from './components/investigacion/investigacion.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InvestigacionComponent } from './components/investigacion/investigacion
     NavbarComponent,
     HomeComponent,
     GaleriaComponent,
-    InvestigacionComponent
+    InvestigacionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
