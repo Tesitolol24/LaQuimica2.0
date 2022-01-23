@@ -11,6 +11,11 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { APP_ROUTING } from './app.routes';
 
 import {InvestigacionService} from './services/investigacion.service'
+import { GaleriaConsumoService } from './services/galeriaConsumo.service';
+import { GaleriaBrujulaService } from './services/galeriaBrujula.service';
+import { GaleriaConversatorioService } from './services/galeriaConversatori.service';
+
+
 
 @NgModule({
   declarations: [
@@ -26,7 +31,10 @@ import {InvestigacionService} from './services/investigacion.service'
     APP_ROUTING
   ],
   providers: [
-    InvestigacionService
+    InvestigacionService,
+    GaleriaConsumoService,
+    GaleriaBrujulaService,
+    GaleriaConversatorioService
   ],
   bootstrap: [AppComponent]
 })

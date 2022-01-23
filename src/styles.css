@@ -1,12 +1,40 @@
 body{
-    background: rgb(45,156,219);
-    background: linear-gradient(180deg, rgba(45,156,219,1) 20%, rgba(255,255,255,1) 90%);
-    background-repeat: no-repeat;
+  background: rgb(45,156,219);
+  background: linear-gradient(180deg, rgba(45,156,219,1) 20%, rgba(255,255,255,1) 90%);
+  background-repeat: no-repeat;
 }
 
 footer{
-    color: white;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
