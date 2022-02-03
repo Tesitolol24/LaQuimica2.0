@@ -1,7 +1,7 @@
 .card {
     display: block;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     line-height: 1.42857143;
     background-color: #fff;
     border-radius: 5px;
@@ -10,5 +10,16 @@
 }
 
 .card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.carrusel{
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;    
+}
+
+.carrusel:hover {
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
